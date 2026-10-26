@@ -4,7 +4,7 @@ name: Collecte automatique des evenements
 on:
   schedule:
     - cron: '0 11 * * *'
-      timezone: America/Toronto
+  
   workflow_dispatch:
 
 concurrency:
