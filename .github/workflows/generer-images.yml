@@ -1,0 +1,32 @@
+name: Generation manuelle des images Komelio
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  images:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Recuperer le site
+        uses: actions/checkout@v4
+
+      - name: Installer Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Generer une image
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: node generer-images.cjs
+
+      - name: Enregistrer les images
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add images-evenements/
+          git diff --cached --quiet || (git commit -m "Ajouter une illustration evenement" && git push)
