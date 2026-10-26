@@ -2,8 +2,10 @@ name: Generation manuelle des images Komelio
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 13 * * *'
 concurrency:
-  group: komelio-images
+  group: komelio-automatisations
   cancel-in-progress: false
 permissions:
   contents: write
