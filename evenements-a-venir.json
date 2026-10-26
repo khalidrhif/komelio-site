@@ -95,5 +95,15 @@
     "prix": "Gratuit",
     "inscription": "À vérifier",
     "url_source": "https://repentigny.ca/evenement/halloween-au-centre-aquatique-jacques-dupuis"
+  },
+  {
+    "titre": "Atelier de conception d'une chouette en bois",
+    "date": "01 novembre 2026",
+    "horaire": "13 h 30 à 14 h 30",
+    "seances": [],
+    "lieu": "Bibliothèque Robert-Lussier",
+    "prix": "Gratuit",
+    "inscription": "Requise",
+    "url_source": "https://repentigny.ca/evenement/atelier-de-conception-dune-chouette-en-bois"
   }
 ]
