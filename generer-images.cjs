@@ -6,8 +6,9 @@ const FICHIER = "evenements-a-venir.json";
 const DOSSIER = "images-evenements";
 
 // Sécurité : au maximum 2 nouvelles images par exécution.
-const MAX_IMAGES = 1;
-
+const MAX_IMAGES=1;
+const MAX_IMAGES_MOIS=10;
+const FICHIER_COMPTEUR="compteur-images.json";
 async function genererImage(evenement, fichier) {
   const cle = process.env.OPENAI_API_KEY;
 
@@ -52,8 +53,28 @@ Aucun texte, aucun logo. Ne pas représenter de personnes réelles identifiables
     Buffer.from(image, "base64")
   );
 }
+async function lireCompteur() {
+  const mois = new Date().toISOString().slice(0, 7);
 
+  try {
+    const donnees = JSON.parse(
+      await fs.readFile(FICHIER_COMPTEUR, "utf8")
+    );
+
+    if (donnees.mois === mois) {
+      return donnees;
+    }
+  } catch (erreur) {
+    if (erreur.code !== "ENOENT") {
+      throw erreur;
+    }
+  }
+
+  return { mois, nombre: 0 };
+}
 async function main() {
+      const compteurMensuel = await lireCompteur();
+  console.log(`Images générées ce mois : ${compteurMensuel.nombre}/${MAX_IMAGES_MOIS}`);
   await fs.mkdir(DOSSIER, { recursive: true });
 
   const evenements = JSON.parse(
@@ -65,9 +86,14 @@ async function main() {
   }
 
   let compteur = 0;
-
+if (compteurMensuel.nombre >= MAX_IMAGES_MOIS) {
+  console.log("Limite mensuelle de 10 images atteinte.");
+  return;
+}
   for (const evenement of evenements) {
-    if (compteur >= MAX_IMAGES) break;
+    if (compteur >= MAX_IMAGES || compteurMensuel.nombre >= MAX_IMAGES_MOIS) {
+  break;
+}
 
     const titre = evenement.titre || evenement.title || "";
     const identifiant = titre
@@ -99,6 +125,13 @@ async function main() {
     console.log(`Génération : ${titre}`);
     await genererImage(evenement, fichier);
     compteur++;
+    compteurMensuel.nombre++;
+
+await fs.writeFile(
+  FICHIER_COMPTEUR,
+  JSON.stringify(compteurMensuel, null, 2),
+  "utf8"
+);
     console.log(`Image enregistrée : ${fichier}`);
   }
 
