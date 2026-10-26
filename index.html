@@ -38,10 +38,27 @@ let evenements=[];
 let categorie='tous';
 const normaliser=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
 function imagePour(e){
- const t=normaliser(e.titre);
- if(t.includes('rythme des saisons'))return './images-evenements/vivre-au-rythme-des-saisons.png';
- if(t.includes('marais du sorcier'))return './images-evenements/marais-du-sorcier.png';
- return null;
+ 
+const t = normaliser(e.titre);
+
+// Conserver les illustrations existantes
+if (t.includes('rythme des saisons'))
+  return './images-evenements/vivre-au-rythme-des-saisons.png';
+
+if (t.includes('marais du sorcier'))
+  return './images-evenements/marais-du-sorcier.png';
+
+// Chercher une image générée automatiquement
+const nom = e.titre
+  .normalize('NFD')
+  .replace(/[\u0300-\u036f]/g, '')
+  .toLowerCase()
+  .replace(/[^a-z0-9]+/g, '-')
+  .replace(/^-|-$/g, '')
+  .slice(0, 80);
+
+return './images-evenements/' + nom + '.png';
+
 }
 function categoriePour(e){
  const t=normaliser([e.titre,e.categorie,e.description].join(' '));
@@ -69,7 +86,7 @@ function creerCarte(e){
  const carte=element('article','carte');
  const image=element('div','image-evenement');
  const src=imagePour(e);
- if(src){image.style.backgroundImage=`url("${src}")`;const note=element('span','illustration','Illustration IA');image.append(note);}else{image.textContent='📅';}
+ if(src){image.style.backgroundImage=`url("${src}")`;const note=element('span','illustration','');image.append(note);}else{image.textContent='📅';}
  const contenu=element('div','contenu-carte');
  contenu.append(element('div','date','📅 '+(e.date||'Date à confirmer')));
  contenu.append(element('h3','',e.titre||'Événement'));
