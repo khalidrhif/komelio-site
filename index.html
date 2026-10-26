@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Komelio — Événements, commerces et entrepreneurs</title>
+<style>
+:root{--bleu:#175be7;--marine:#172944;--fond:#f5f7fb;--gris:#64748b;--bord:#e2e8f0}
+*{box-sizing:border-box}body{margin:0;background:var(--fond);color:var(--marine);font-family:Arial,Helvetica,sans-serif}a{color:var(--bleu)}.container{width:min(1280px,94%);margin:auto}
+header{background:white;border-bottom:1px solid var(--bord)}.barre{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:72px;flex-wrap:wrap}.logo{font-size:29px;font-weight:800;color:var(--bleu);text-decoration:none}nav{display:flex;gap:20px;flex-wrap:wrap}nav a{text-decoration:none;color:var(--marine);font-weight:600;font-size:14px}
+.hero{background:linear-gradient(120deg,#102c60,#2669dd);color:white;padding:42px 0 38px}.hero h1{font-size:clamp(28px,4vw,43px);margin:0 0 10px}.hero p{margin:0 0 23px;color:#e0eaff}.recherche{background:white;border-radius:14px;padding:12px;display:grid;grid-template-columns:2fr 1fr 1fr auto;gap:10px;box-shadow:0 10px 26px #00163824}.recherche input,.recherche button{font:inherit;padding:13px;border-radius:9px}.recherche input{min-width:0;border:1px solid var(--bord);color:var(--marine)}button{cursor:pointer}.recherche button{background:#ffbd4a;border:0;font-weight:800;color:#162742;padding:13px 20px}
+.categories{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0}.categorie{border:1px solid #dce4f2;background:white;border-radius:30px;padding:10px 15px;font-weight:700;color:var(--marine)}.categorie.active{background:var(--bleu);color:white;border-color:var(--bleu)}
+.section-head{display:flex;align-items:center;justify-content:space-between;gap:15px;margin:25px 0 18px}.section-head h2{margin:0;font-size:25px}.compteur{color:var(--gris);font-size:14px}
+.grille-evenements{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:17px}
+.carte{background:white;border:1px solid var(--bord);border-radius:15px;overflow:hidden;box-shadow:0 5px 18px #17294410;display:flex;flex-direction:column;min-width:0;transition:transform .15s}.carte:hover{transform:translateY(-3px)}
+.image-evenement{height:165px;flex-shrink:0;background:linear-gradient(135deg,#3178e7,#122951);background-size:cover;background-position:center;display:flex;align-items:center;justify-content:center;font-size:55px;position:relative}
+.image-evenement::after{content:none}.illustration{position:absolute;right:8px;bottom:8px;color:white;background:#0009;border-radius:5px;font-size:10px;padding:4px 6px}
+.contenu-carte{padding:15px;display:flex;flex-direction:column;gap:9px;flex:1;color:var(--marine);position:static}.date{font-size:12px;font-weight:700;color:var(--bleu)}.carte h3{font-size:17px;line-height:1.3;margin:0;min-height:44px}.information{font-size:13px;line-height:1.4;margin:0;color:#40516a}.etiquette{display:inline-block;align-self:flex-start;background:#e7efff;color:#175be7;font-size:12px;font-weight:700;padding:5px 9px;border-radius:6px}.lien-evenement{font-size:13px;font-weight:700;margin-top:auto;padding-top:8px;text-decoration:underline}.message{background:white;border:1px solid var(--bord);border-radius:12px;padding:22px;color:#42536b}
+.services{margin:42px 0 55px;display:grid;grid-template-columns:1fr 1fr;gap:17px}.service{background:white;border:1px solid var(--bord);border-radius:15px;padding:24px}.service h2{margin:0 0 9px}.service p{color:var(--gris);line-height:1.5;margin:0}.service small{display:inline-block;margin-top:14px;color:var(--bleu);font-weight:700}
+footer{border-top:1px solid var(--bord);background:white;padding:22px 0;color:var(--gris);font-size:13px}
+@media(max-width:1050px){.grille-evenements{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:760px){.grille-evenements{grid-template-columns:repeat(2,minmax(0,1fr))}.recherche{grid-template-columns:1fr 1fr}.recherche input:first-child{grid-column:1/-1}.services{grid-template-columns:1fr}}@media(max-width:480px){.grille-evenements{grid-template-columns:1fr}.recherche{grid-template-columns:1fr}.recherche input:first-child{grid-column:auto}.image-evenement{height:200px}.hero{padding:32px 0}.section-head h2{font-size:21px}}
+</style>
+</head>
+<body>
+<header><div class="container barre"><a class="logo" href="#accueil">📍 Komelio</a><nav><a href="#evenements">Événements</a><a href="#commerces">Commerces</a><a href="#entrepreneurs">Entrepreneurs</a></nav></div></header>
+<section class="hero" id="accueil"><div class="container"><h1>Découvrez ce qui se passe près de chez vous</h1><p>Événements, activités et bonnes adresses au Québec.</p><form class="recherche" id="recherche"><input id="recherche-texte" placeholder="Rechercher un événement..." aria-label="Rechercher un événement"><input id="recherche-ville" placeholder="Ville (ex. Repentigny)" aria-label="Ville"><input id="recherche-date" type="date" aria-label="Date de l'événement"><button type="submit">Rechercher</button></form></div></section>
+<main class="container">
+<div class="categories" id="categories"><button class="categorie active" data-filtre="tous">✨ Tous</button><button class="categorie" data-filtre="spectacle">🎭 Spectacles</button><button class="categorie" data-filtre="famille">👨‍👩‍👧 Famille</button><button class="categorie" data-filtre="culture">🎨 Culture</button><button class="categorie" data-filtre="autres">📅 Autres</button></div>
+<section id="evenements"><div class="section-head"><h2>🔥 Événements à venir</h2><span class="compteur" id="compteur">Chargement…</span></div><div class="grille-evenements" id="event-grid"></div><p id="message" class="message" hidden></p></section>
+<section class="services"><div class="service" id="commerces"><h2>🏪 Commerces locaux</h2><p>Découvrez les boutiques, restaurants, garages et commerces de votre région.</p><small>Annuaire en développement</small></div><div class="service" id="entrepreneurs"><h2>🛠️ Entrepreneurs et services</h2><p>Trouvez des professionnels pour la rénovation, l'entretien et les services à domicile.</p><small>Annuaire en développement</small></div></section>
+</main><footer><div class="container">© 2026 Komelio · Événements et commerces du Québec. Les images générées par IA sont illustratives.</div></footer>
+<script>
+'use strict';
+const grille=document.getElementById('event-grid');
+const compteur=document.getElementById('compteur');
+const message=document.getElementById('message');
+let evenements=[];
+let categorie='tous';
+const normaliser=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+function imagePour(e){
+ const t=normaliser(e.titre);
+ if(t.includes('rythme des saisons'))return './images-evenements/vivre-au-rythme-des-saisons.png';
+ if(t.includes('marais du sorcier'))return './images-evenements/marais-du-sorcier.png';
+ return null;
+}
+function categoriePour(e){
+ const t=normaliser([e.titre,e.categorie,e.description].join(' '));
+ if(/spectacle|theatre|concert|musique/.test(t))return 'spectacle';
+ if(/halloween|enfant|famille|aquatique|crealab/.test(t))return 'famille';
+ if(/musee|exposition|bibliotheque|saison/.test(t))return 'culture';
+ return 'autres';
+}
+function element(tag,classe,texte){const x=document.createElement(tag);if(classe)x.className=classe;if(texte!==undefined)x.textContent=texte;return x;}
+function dateDebut(e){const val=e.date_debut||e.date_iso||e.debut||e.start_date;return typeof val==='string'&&/^\d{4}-\d{2}-\d{2}/.test(val)?val.slice(0,10):null;}
+function correspondDate(e,jour){
+ if(!jour)return true;
+ const debut=dateDebut(e),fin=e.date_fin||e.fin||e.end_date;
+ if(debut){return debut<=jour&&(!fin||String(fin).slice(0,10)>=jour);}
+ const titre=normaliser(e.titre),d=Number(jour.slice(8,10)),m=Number(jour.slice(5,7));
+ if(m!==10||jour.slice(0,4)!=='2026')return false;
+ if(titre.includes('rythme des saisons'))return d===27;
+ if(titre.includes('marais du sorcier')||titre.includes('facebook'))return d===28;
+ if(titre.includes('musee de l'))return d>=28&&d<=30;
+ if(titre.includes('crealab'))return d===29;
+ if(titre.includes('centre aquatique'))return d===31;
+ return false;
+}
+function creerCarte(e){
+ const carte=element('article','carte');
+ const image=element('div','image-evenement');
+ const src=imagePour(e);
+ if(src){image.style.backgroundImage=`url("${src}")`;const note=element('span','illustration','Illustration IA');image.append(note);}else{image.textContent='📅';}
+ const contenu=element('div','contenu-carte');
+ contenu.append(element('div','date','📅 '+(e.date||'Date à confirmer')));
+ contenu.append(element('h3','',e.titre||'Événement'));
+ contenu.append(element('p','information','🕒 '+(e.horaire||'Horaire à vérifier')));
+ contenu.append(element('p','information','📍 '+(e.lieu||'Lieu à vérifier')));
+ if(e.seances){const s=Array.isArray(e.seances)?e.seances.length+' séances — consulter les horaires officiels':String(e.seances);contenu.append(element('p','information',s));}
+ contenu.append(element('span','etiquette',e.prix||'Prix à vérifier'));
+ contenu.append(element('p','information','Inscription : '+(e.inscription||'À vérifier')));
+ const lien=element('a','lien-evenement','Voir l’événement officiel →');
+ const url=e.url_source||e.url||'';
+ if(/^https:\/\/repentigny\.ca\/evenement\//.test(url)){lien.href=url;lien.target='_blank';lien.rel='noopener noreferrer';}else{lien.removeAttribute('href');lien.textContent='Lien officiel indisponible';}
+ contenu.append(lien);carte.append(image,contenu);return carte;
+}
+function afficher(){
+ const q=normaliser(document.getElementById('recherche-texte').value.trim());
+ const ville=normaliser(document.getElementById('recherche-ville').value.trim());
+ const date=document.getElementById('recherche-date').value;
+ const liste=evenements.filter(e=>{
+  const texte=normaliser([e.titre,e.lieu,e.description].join(' '));
+  const villeEvenement=normaliser(e.ville||'Repentigny');
+  return (!q||texte.includes(q))&&(!ville||villeEvenement.includes(ville))&&correspondDate(e,date)&&(categorie==='tous'||categoriePour(e)===categorie);
+ });
+ grille.replaceChildren(...liste.map(creerCarte));
+ compteur.textContent=liste.length+' événement(s)';
+ message.hidden=liste.length>0;
+ if(!liste.length)message.textContent='Aucun événement trouvé. Essayez une autre ville, date ou catégorie.';
+}
+document.getElementById('recherche').addEventListener('submit',e=>{e.preventDefault();afficher();document.getElementById('evenements').scrollIntoView({behavior:'smooth'});});
+document.querySelectorAll('.categorie').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.categorie').forEach(x=>x.classList.remove('active'));b.classList.add('active');categorie=b.dataset.filtre;afficher();}));
+fetch('./evenements-a-venir.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('Fichier introuvable');return r.json();}).then(data=>{evenements=Array.isArray(data)?data:Array.isArray(data.evenements)?data.evenements:[];afficher();}).catch(()=>{compteur.textContent='0 événement';message.hidden=false;message.textContent='Impossible de charger evenements-a-venir.json. Vérifiez que le fichier est dans le même dossier que index.html et que le serveur local est démarré.';});
+</script>
+</body>
+</html>

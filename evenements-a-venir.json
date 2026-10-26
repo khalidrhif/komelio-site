@@ -1,0 +1,99 @@
+[
+  {
+    "titre": "Vivre au rythme des saisons",
+    "date": "27 octobre 2026",
+    "horaire": "19 h à 20 h 30",
+    "seances": [],
+    "lieu": "Bibliothèque Robert-Lussier",
+    "prix": "Gratuit",
+    "inscription": "Requise",
+    "url_source": "https://repentigny.ca/evenement/vivre-au-rythme-des-saisons"
+  },
+  {
+    "titre": "Spectacle : Ça grouille dans le marais du sorcier",
+    "date": "28 octobre 2026",
+    "horaire": "18 h 45 à 19 h 30",
+    "seances": [],
+    "lieu": "Bibliothèque Robert-Lussier",
+    "prix": "Gratuit",
+    "inscription": "Requise",
+    "url_source": "https://repentigny.ca/evenement/spectacle-ca-grouille-dans-le-marais-du-sorcier"
+  },
+  {
+    "titre": "Initiation à Facebook sur un cellulaire",
+    "date": "28 octobre 2026",
+    "horaire": "14 h à 15 h 30",
+    "seances": [],
+    "lieu": "Bibliothèque Edmond-Archambault",
+    "prix": "Gratuit",
+    "inscription": "Requise",
+    "url_source": "https://repentigny.ca/evenement/initiation-facebook-sur-un-cellulaire"
+  },
+  {
+    "titre": "Musée de l'étrange : Visite des expositions à la lampe de poche",
+    "date": "28 octobre 2026",
+    "horaire": "Plusieurs séances",
+    "seances": [
+      {
+        "date": "28 octobre 2026",
+        "heure": "18 h"
+      },
+      {
+        "date": "28 octobre 2026",
+        "heure": "19 h"
+      },
+      {
+        "date": "28 octobre 2026",
+        "heure": "20 h"
+      },
+      {
+        "date": "29 octobre 2026",
+        "heure": "18 h"
+      },
+      {
+        "date": "29 octobre 2026",
+        "heure": "19 h"
+      },
+      {
+        "date": "29 octobre 2026",
+        "heure": "20 h"
+      },
+      {
+        "date": "30 octobre 2026",
+        "heure": "18 h"
+      },
+      {
+        "date": "30 octobre 2026",
+        "heure": "19 h"
+      },
+      {
+        "date": "30 octobre 2026",
+        "heure": "20 h"
+      }
+    ],
+    "lieu": "Espace culturel de Repentigny",
+    "prix": "Gratuit",
+    "inscription": "Requise",
+    "url_source": "https://repentigny.ca/evenement/musee-de-letrange-visite-des-expositions-la-lampe-de-poche"
+  },
+  {
+    "titre": "Party d'Halloween au Créalab",
+    "date": "29 octobre 2026",
+    "horaire": "19 h à 21 h",
+    "seances": [],
+    "lieu": "Bibliothèque Robert-Lussier",
+    "prix": "Gratuit",
+    "inscription": "Non requise",
+    "url_source": "https://repentigny.ca/evenement/party-dhalloween-au-crealab"
+  },
+  {
+    "titre": "Halloween au Centre aquatique Jacques-Dupuis",
+    "date": "31 octobre 2026",
+    "horaire": "13 h à 15 h 55",
+    "seances": [],
+    "lieu": "Centre aquatique Jacques-Dupuis",
+    "prix": "Gratuit",
+    "inscription": "À vérifier",
+    "url_source": "https://repentigny.ca/evenement/halloween-au-centre-aquatique-jacques-dupuis"
+  }
+]
