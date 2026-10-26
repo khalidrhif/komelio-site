@@ -19,15 +19,33 @@ header{background:white;border-bottom:1px solid var(--bord)}.barre{display:flex;
 .services{margin:42px 0 55px;display:grid;grid-template-columns:1fr 1fr;gap:17px}.service{background:white;border:1px solid var(--bord);border-radius:15px;padding:24px}.service h2{margin:0 0 9px}.service p{color:var(--gris);line-height:1.5;margin:0}.service small{display:inline-block;margin-top:14px;color:var(--bleu);font-weight:700}
 footer{border-top:1px solid var(--bord);background:white;padding:22px 0;color:var(--gris);font-size:13px}
 @media(max-width:1050px){.grille-evenements{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:760px){.grille-evenements{grid-template-columns:repeat(2,minmax(0,1fr))}.recherche{grid-template-columns:1fr 1fr}.recherche input:first-child{grid-column:1/-1}.services{grid-template-columns:1fr}}@media(max-width:480px){.grille-evenements{grid-template-columns:1fr}.recherche{grid-template-columns:1fr}.recherche input:first-child{grid-column:auto}.image-evenement{height:200px}.hero{padding:32px 0}.section-head h2{font-size:21px}}
+.annuaire-pros{margin:42px 0 55px;scroll-margin-top:20px}.intro-pros{font-size:14px;color:var(--gris);line-height:1.6}.recherche-pros{box-shadow:none;border:1px solid var(--bord);align-items:end}.recherche-pros label{display:flex;flex-direction:column;gap:7px;font-size:12px;font-weight:bold;color:var(--gris);min-width:0}.recherche-pros select{font:inherit;font-size:15px;padding:13px;border:1px solid var(--bord);border-radius:9px;background:white;color:var(--marine);width:100%;min-height:47px}.grille-pros{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}.fiche-pro{background:white;border:1px solid var(--bord);border-top:3px solid var(--bleu);border-radius:12px;padding:19px;min-width:0;overflow-wrap:anywhere}.fiche-pro h3{font-size:19px;line-height:1.4;margin:13px 0}.fiche-pro p{font-size:13px;line-height:1.6;color:#40516a;margin:9px 0}.liens-pro{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.liens-pro a{padding:9px 12px;border:1px solid var(--bord);border-radius:7px;font-size:13px;font-weight:bold;text-decoration:none}.liens-pro a:first-child{color:white;background:var(--bleu);border-color:var(--bleu)}.fiche-pro small{display:block;color:var(--gris);font-size:11px;line-height:1.6;margin-top:15px}.recherche-pros button:disabled{opacity:.65;cursor:wait}
+@media(max-width:1000px){.recherche-pros{grid-template-columns:1fr 1fr}.grille-pros{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.grille-pros{grid-template-columns:1fr}.recherche-pros{grid-template-columns:1fr}.recherche-pros label{grid-column:1/-1}}
+
+.barre nav{align-items:center}.barre nav a.bouton-inscription{display:inline-flex;align-items:center;justify-content:center;background:#175be7;color:white;padding:12px 18px;border-radius:9px;text-decoration:none;font-weight:700;box-shadow:0 3px 9px #175be724}.barre nav a.bouton-inscription:hover{background:#124bc0}
+@media(max-width:600px){.barre{padding:16px 0}.barre nav{gap:14px;width:100%}.barre nav a.bouton-inscription{width:100%;padding:13px 16px}}
+
 </style>
 </head>
 <body>
-<header><div class="container barre"><a class="logo" href="#accueil">📍 Komelio</a><nav><a href="#evenements">Événements</a><a href="#commerces">Commerces</a><a href="#entrepreneurs">Entrepreneurs</a></nav></div></header>
+<header><div class="container barre"><a class="logo" href="#accueil">📍 Komelio</a><nav><a href="#evenements">Événements</a><a href="#entrepreneurs">Entrepreneurs</a><a class="bouton-inscription" href="/ajouter-commerce.html">Ajouter mon entreprise</a></nav></div></header>
 <section class="hero" id="accueil"><div class="container"><h1>Découvrez ce qui se passe près de chez vous</h1><p>Événements, activités et bonnes adresses au Québec.</p><form class="recherche" id="recherche"><input id="recherche-texte" placeholder="Rechercher un événement..." aria-label="Rechercher un événement"><input id="recherche-ville" placeholder="Ville (ex. Repentigny)" aria-label="Ville"><input id="recherche-date" type="date" aria-label="Date de l'événement"><button type="submit">Rechercher</button></form></div></section>
 <main class="container">
 <div class="categories" id="categories"><button class="categorie active" data-filtre="tous">✨ Tous</button><button class="categorie" data-filtre="spectacle">🎭 Spectacles</button><button class="categorie" data-filtre="famille">👨‍👩‍👧 Famille</button><button class="categorie" data-filtre="culture">🎨 Culture</button><button class="categorie" data-filtre="autres">📅 Autres</button></div>
 <section id="evenements"><div class="section-head"><h2>🔥 Événements à venir</h2><span class="compteur" id="compteur">Chargement…</span></div><div class="grille-evenements" id="event-grid"></div><p id="message" class="message" hidden></p></section>
-<section class="services"><div class="service" id="commerces"><h2>🏪 Commerces locaux</h2><p>Découvrez les boutiques, restaurants, garages et commerces de votre région.</p><small>Annuaire en développement</small></div><div class="service" id="entrepreneurs"><h2>🛠️ Entrepreneurs et services</h2><p>Trouvez des professionnels pour la rénovation, l'entretien et les services à domicile.</p><small>Annuaire en développement</small></div></section>
+<section class="annuaire-pros" id="entrepreneurs" aria-labelledby="titre-pros">
+<div class="section-head"><h2 id="titre-pros">🛠️ Entrepreneurs et services</h2></div>
+<p class="intro-pros">Trouvez un professionnel près de chez vous. Consultez ses coordonnées et son site officiel.</p>
+<form id="recherche-pros" class="recherche recherche-pros">
+<label>Nom ou mot-clé<input id="mot-pro" type="search" maxlength="150" placeholder="Ex. Luxi"></label>
+<label>Métier<select id="metier-pro"><option value="Ménage">Ménage</option><option>Peinture</option><option>Plomberie</option><option>Électricité</option><option>Paysagement</option><option>Déneigement</option><option>Rénovation</option><option>Garage et automobile</option></select></label>
+<label>Ville<input id="ville-pro" value="Repentigny" maxlength="100" required></label>
+<button type="submit">Trouver un pro</button>
+</form>
+<p id="etat-pros" role="status" aria-live="polite" class="intro-pros">Chargement des professionnels…</p>
+<div id="liste-pros" class="grille-pros" aria-label="Professionnels"></div>
+</section>
 </main><footer><div class="container">© 2026 Komelio · Événements et commerces du Québec. Les images générées par IA sont illustratives.</div></footer>
 <script>
 'use strict';
@@ -117,6 +135,50 @@ function afficher(){
 document.getElementById('recherche').addEventListener('submit',e=>{e.preventDefault();afficher();document.getElementById('evenements').scrollIntoView({behavior:'smooth'});});
 document.querySelectorAll('.categorie').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.categorie').forEach(x=>x.classList.remove('active'));b.classList.add('active');categorie=b.dataset.filtre;afficher();}));
 fetch('./evenements-a-venir.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('Fichier introuvable');return r.json();}).then(data=>{evenements=Array.isArray(data)?data:Array.isArray(data.evenements)?data.evenements:[];afficher();}).catch(()=>{compteur.textContent='0 événement';message.hidden=false;message.textContent='Impossible de charger evenements-a-venir.json. Vérifiez que le fichier est dans le même dossier que index.html et que le serveur local est démarré.';});
+</script>
+<script>
+(() => {
+ const formulaire=document.getElementById('recherche-pros');
+ const liste=document.getElementById('liste-pros');
+ const etat=document.getElementById('etat-pros');
+ let numero=0;
+ const normaliserPro=valeur=>String(valeur||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();
+ function texte(parent,balise,valeur,classe){const x=document.createElement(balise);x.textContent=valeur;if(classe)x.className=classe;parent.append(x);return x;}
+ function cartePro(pro){
+  const article=document.createElement('article');article.className='fiche-pro';
+  texte(article,'span',pro.categorie||'Service','etiquette');
+  texte(article,'h3',pro.nom||'Professionnel');
+  texte(article,'p',[pro.adresse,pro.ville,pro.codePostal].filter(Boolean).join(', '));
+  if(pro.telephone)texte(article,'p','Téléphone : '+pro.telephone);
+  const liens=document.createElement('div');liens.className='liens-pro';
+  if(pro.telephone){const chiffres=String(pro.telephone).replace(/[^0-9+]/g,'');if(/^\+?[0-9]{7,15}$/.test(chiffres)){const appel=texte(liens,'a','Appeler');appel.href='tel:'+chiffres;}}
+  if(pro.siteWeb){try{const url=new URL(pro.siteWeb);if(['https:','http:'].includes(url.protocol)){const web=texte(liens,'a','Site Internet ↗');web.href=url.href;web.target='_blank';web.rel='noopener noreferrer';}}catch{}}
+  article.append(liens);
+  if(pro.attribution){const credit=texte(article,'small','');if(String(pro.attribution).includes('OpenStreetMap')){const lien=texte(credit,'a',pro.attribution);lien.href='https://www.openstreetmap.org/copyright';lien.target='_blank';lien.rel='noopener noreferrer';}else credit.textContent=pro.attribution;}
+  return article;
+ }
+ async function chargerPros(){
+  const actuel=++numero;
+  const metier=document.getElementById('metier-pro').value;
+  const ville=document.getElementById('ville-pro').value.trim();
+  const mot=normaliserPro(document.getElementById('mot-pro').value);
+  if(!ville){etat.textContent='Indiquez une ville.';return;}
+  const bouton=formulaire.querySelector('button');bouton.disabled=true;
+  liste.replaceChildren();liste.setAttribute('aria-busy','true');etat.textContent='Recherche des professionnels…';
+  try{
+   const reponse=await fetch('/api/commerces?'+new URLSearchParams({mot:metier,ville}),{cache:'no-store',signal:AbortSignal.timeout(30000)});
+   if(!reponse.ok)throw new Error('Recherche indisponible');
+   const data=await reponse.json();if(!Array.isArray(data.commerces))throw new Error('Réponse invalide');
+   if(actuel!==numero)return;
+   const fiches=data.commerces.filter(pro=>normaliserPro(pro.categorie)===normaliserPro(metier)&&(!mot||normaliserPro([pro.nom,pro.description,pro.adresse].join(' ')).includes(mot)));
+   liste.replaceChildren(...fiches.map(cartePro));
+   etat.textContent=fiches.length?fiches.length+' professionnel(s) affiché(s) à '+ville+' · '+metier+'. Recherche limitée aux 50 premières réponses du serveur.':'Aucun professionnel publié trouvé pour ce métier et cette recherche.';
+  }catch{if(actuel!==numero)return;etat.textContent='Impossible de charger les professionnels. Vérifiez que node serveur.js est ouvert puis réessayez.';}
+  finally{if(actuel===numero){bouton.disabled=false;liste.setAttribute('aria-busy','false');}}
+ }
+ formulaire.addEventListener('submit',e=>{e.preventDefault();chargerPros();});
+ chargerPros();
+})();
 </script>
 </body>
 </html>

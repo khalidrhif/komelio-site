@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ajouter votre commerce — Komelio</title>
+<style>
+:root{--bleu:#175be7;--marine:#172944;--fond:#f5f7fb;--gris:#64748b;--bord:#e2e8f0}
+*{box-sizing:border-box}body{margin:0;background:var(--fond);color:var(--marine);font-family:Arial,Helvetica,sans-serif}a{color:var(--bleu)}.container{width:min(850px,94%);margin:auto}header{background:white;border-bottom:1px solid var(--bord)}.barre{min-height:72px;display:flex;justify-content:space-between;align-items:center;gap:15px}.logo{font-size:28px;font-weight:800;text-decoration:none}.retour{text-decoration:none;font-weight:700}main{padding:35px 0 65px}h1{margin:0 0 10px;font-size:clamp(27px,4vw,37px)}.intro{color:var(--gris);line-height:1.5;margin-bottom:25px}.carte{background:white;border:1px solid var(--bord);border-radius:16px;padding:clamp(18px,4vw,35px);box-shadow:0 5px 18px #17294410}.champs{display:grid;grid-template-columns:1fr 1fr;gap:20px}.champ{display:flex;flex-direction:column;gap:7px}.large{grid-column:1/-1}label{font-weight:700;font-size:14px}input,select,textarea{width:100%;border:1px solid #cbd5e1;border-radius:9px;padding:12px;font:inherit;color:var(--marine);background:white}textarea{min-height:110px;resize:vertical}input:focus,select:focus,textarea:focus{outline:2px solid #9dbdff;outline-offset:1px}.note{font-size:13px;color:var(--gris);line-height:1.5}.action{margin-top:24px;background:var(--bleu);border:0;color:white;font-size:16px;font-weight:700;padding:14px 20px;border-radius:9px;cursor:pointer}.action:hover{background:#1046b8}.action:disabled{opacity:.65;cursor:wait}.compte{font-size:12px;color:var(--gris);text-align:right}.confirmation{display:flex;align-items:flex-start;gap:10px;margin-top:18px;font-size:14px;line-height:1.5}.confirmation input{width:auto;margin-top:3px;flex-shrink:0}.avis{margin-top:18px;background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;padding:14px;line-height:1.5}.avis.erreur{background:#fef2f2;border-color:#fecaca;color:#991b1b}footer{border-top:1px solid var(--bord);background:white;padding:22px 0;color:var(--gris);font-size:13px}@media(max-width:620px){.champs{grid-template-columns:1fr}.large{grid-column:auto}.barre{flex-wrap:wrap;padding:12px 0}}
+</style>
+</head>
+<body>
+<header><div class="container barre"><a class="logo" href="index.html">📍 Komelio</a><a class="retour" href="index.html">← Retour à l'accueil</a></div></header>
+<main class="container">
+<h1>🏪 Ajouter votre commerce gratuitement</h1>
+<p class="intro">Présentez votre commerce ou votre service aux habitants de votre région. Les demandes seront vérifiées avant leur publication.</p>
+<div class="carte">
+<form id="formulaire-commerce">
+<div class="champs">
+<div class="champ large"><label for="nom">Nom du commerce *</label><input id="nom" name="nom" autocomplete="organization" required maxlength="120" placeholder="Ex. : Garage du Centre"></div>
+<div class="champ"><label for="categorie">Catégorie *</label><select id="categorie" name="categorie" required><option value="">Choisir une catégorie</option><option>Commerce et boutique</option><option>Restaurant et café</option><option>Garage et automobile</option><option>Construction et rénovation</option><option>Entretien et nettoyage</option><option>Santé et bien-être</option><option>Services professionnels</option><option>Autre</option></select></div>
+<div class="champ"><label for="ville">Ville *</label><input id="ville" name="ville" required maxlength="100" placeholder="Ex. : Repentigny"></div>
+<div class="champ large"><label for="adresse">Adresse du commerce</label><input id="adresse" name="adresse" maxlength="200" autocomplete="street-address" placeholder="Numéro et rue (facultatif)"></div>
+<div class="champ"><label for="telephone">Téléphone *</label><input id="telephone" name="telephone" type="tel" required maxlength="30" autocomplete="tel" placeholder="450 000-0000"></div>
+<div class="champ"><label for="courriel">Courriel de contact *</label><input id="courriel" name="courriel" type="email" required maxlength="150" autocomplete="email" placeholder="contact@exemple.ca"></div>
+<div class="champ large"><label for="site">Site Web (facultatif)</label><input id="site" name="site" type="url" maxlength="300" placeholder="https://exemple.ca"></div>
+<div class="champ large"><label for="description">Description *</label><textarea id="description" name="description" required minlength="30" maxlength="1200" placeholder="Décrivez vos produits ou vos services (30 caractères minimum)..."></textarea><span class="compte" id="compte-description">0 / 1200 caractères</span></div>
+</div>
+<label class="confirmation"><input type="checkbox" id="autorisation" required> Je confirme être autorisé à proposer cette fiche et que les informations sont exactes. *</label>
+<p class="note">* Champs obligatoires. Votre demande sera enregistrée pour vérification avant publication.</p>
+<button class="action" type="submit">Soumettre mon commerce</button>
+<div class="avis" id="avis" role="status" aria-live="polite" hidden></div>
+</form>
+</div>
+</main>
+<footer><div class="container">© 2026 Komelio · Commerces et entrepreneurs du Québec.</div></footer>
+<script>
+'use strict';
+const formulaire = document.getElementById('formulaire-commerce');
+const description = document.getElementById('description');
+const site = document.getElementById('site');
+const avis = document.getElementById('avis');
+const bouton = formulaire.querySelector('button[type="submit"]');
+
+description.addEventListener('input', () => {
+  document.getElementById('compte-description').textContent = description.value.length + ' / 1200 caractères';
+});
+site.addEventListener('input', () => site.setCustomValidity(''));
+
+formulaire.addEventListener('submit', async function (e) {
+  e.preventDefault();
+  if (bouton.disabled) return;
+
+  const adresseSite = site.value.trim();
+  if (adresseSite && !/^https?:\/\//i.test(adresseSite)) {
+    site.setCustomValidity('Indiquez une adresse commençant par https://');
+    site.reportValidity();
+    return;
+  }
+  site.setCustomValidity('');
+
+  const donnees = Object.fromEntries(new FormData(formulaire).entries());
+  avis.hidden = false;
+  avis.classList.remove('erreur');
+  avis.textContent = '⏳ Enregistrement en cours...';
+  bouton.disabled = true;
+
+  try {
+    const reponse = await fetch('/api/demandes-commerce', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(donnees)
+    });
+    const resultat = await reponse.json();
+    if (!reponse.ok) throw new Error(resultat.erreur || 'Erreur lors de l’envoi.');
+
+    avis.textContent = '✅ Votre demande a été enregistrée ! Elle attend notre approbation.';
+    formulaire.reset();
+    document.getElementById('compte-description').textContent = '0 / 1200 caractères';
+  } catch (erreur) {
+    avis.classList.add('erreur');
+    avis.textContent = '❌ ' + (erreur instanceof TypeError ? 'Connexion impossible au serveur. Vérifiez que Komelio est ouvert sur http://127.0.0.1:3000.' : erreur.message);
+  } finally {
+    bouton.disabled = false;
+    avis.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+});
+</script>
+</body>
+</html>
