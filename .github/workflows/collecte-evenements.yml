@@ -7,9 +7,12 @@ on:
       timezone: America/Toronto
   workflow_dispatch:
 
+concurrency:
+  group: komelio-automatisations
+  cancel-in-progress: false
+
 permissions:
   contents: write
-
 jobs:
   collecte:
     runs-on: ubuntu-latest
