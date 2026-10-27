@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Komelio — Événements, commerces et entrepreneurs</title>
+<title>Annonces Lanaudière</title>
 <style>
 :root{--bleu:#175be7;--marine:#172944;--fond:#f5f7fb;--gris:#64748b;--bord:#e2e8f0}
 *{box-sizing:border-box}body{margin:0;background:var(--fond);color:var(--marine);font-family:Arial,Helvetica,sans-serif}a{color:var(--bleu)}.container{width:min(1280px,94%);margin:auto}
@@ -26,14 +26,40 @@ footer{border-top:1px solid var(--bord);background:white;padding:22px 0;color:va
 .barre nav{align-items:center}.barre nav a.bouton-inscription{display:inline-flex;align-items:center;justify-content:center;background:#175be7;color:white;padding:12px 18px;border-radius:9px;text-decoration:none;font-weight:700;box-shadow:0 3px 9px #175be724}.barre nav a.bouton-inscription:hover{background:#124bc0}
 @media(max-width:600px){.barre{padding:16px 0}.barre nav{gap:14px;width:100%}.barre nav a.bouton-inscription{width:100%;padding:13px 16px}}
 
+.categorie-annonce{display:inline-block;border:1px solid #dce4f2;background:white;border-radius:30px;padding:10px 15px;font-weight:700;color:var(--marine);font-size:14px}
+.recherche-annonces select{font:inherit;padding:13px;border:1px solid var(--bord);border-radius:9px;background:white;color:var(--marine);min-width:0}.categorie-annonce.active{background:var(--bleu);color:white;border-color:var(--bleu)}
+.annonce-exemple[hidden]{display:none}
+.recherche-annonces{grid-template-columns:2fr 1fr auto;margin:24px 0}@media(max-width:760px){.recherche-annonces{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-<header><div class="container barre"><a class="logo" href="#accueil">📍 Komelio</a><nav><a href="#evenements">Événements</a><a href="#entrepreneurs">Entrepreneurs</a><a class="bouton-inscription" href="/ajouter-commerce.html">Ajouter mon entreprise</a></nav></div></header>
-<section class="hero" id="accueil"><div class="container"><h1>Découvrez ce qui se passe près de chez vous</h1><p>Événements, activités et bonnes adresses au Québec.</p><form class="recherche" id="recherche"><input id="recherche-texte" placeholder="Rechercher un événement..." aria-label="Rechercher un événement"><input id="recherche-ville" placeholder="Ville (ex. Repentigny)" aria-label="Ville"><input id="recherche-date" type="date" aria-label="Date de l'événement"><button type="submit">Rechercher</button></form></div></section>
+<header><div class="container barre"><a class="logo" href="#accueil">📍 Annonces Lanaudière</a><nav><a href="#petites-annonces">Petites annonces</a><a href="#evenements">Événements</a><a href="#entrepreneurs">Entrepreneurs</a><a class="bouton-inscription" href="/ajouter-commerce.html">Ajouter mon entreprise</a></nav></div></header>
+<section class="hero" id="accueil"><div class="container"><h1>Achetez, vendez et trouvez près de chez vous</h1><p>Petites annonces locales dans Lanaudière.</p></div></section>
 <main class="container">
-<div class="categories" id="categories"><button class="categorie active" data-filtre="tous">✨ Tous</button><button class="categorie" data-filtre="spectacle">🎭 Spectacles</button><button class="categorie" data-filtre="famille">👨‍👩‍👧 Famille</button><button class="categorie" data-filtre="culture">🎨 Culture</button><button class="categorie" data-filtre="autres">📅 Autres</button></div>
-<section id="evenements"><div class="section-head"><h2>🔥 Événements à venir</h2><span class="compteur" id="compteur">Chargement…</span></div><div class="grille-evenements" id="event-grid"></div><p id="message" class="message" hidden></p></section>
+<section id="petites-annonces" aria-labelledby="titre-annonces">
+  <div class="section-head"><h2 id="titre-annonces">🏷️ Catégories de petites annonces</h2></div>
+  <p class="intro-pros">Découvrez les catégories de notre futur marché local.</p>
+  <div class="categories" aria-label="Catégories de petites annonces">
+    <button type="button" class="categorie-annonce">🛋️ Maison et meubles</button><button type="button" class="categorie-annonce">🚗 Véhicules</button><button type="button" class="categorie-annonce">🏠 Immobilier et locations</button><button type="button" class="categorie-annonce">🔧 Services</button><button type="button" class="categorie-annonce">💼 Emplois</button><button type="button" class="categorie-annonce">👨‍👩‍👧 Famille et enfants</button><button type="button" class="categorie-annonce">🚲 Loisirs et plein air</button><button type="button" class="categorie-annonce">📦 Autres annonces</button>
+  </div>
+  <form id="recherche-annonces" class="recherche recherche-annonces" role="search">
+    <input id="annonce-mot" type="search" placeholder="Que recherchez-vous ?" aria-label="Rechercher une annonce">
+    <input id="annonce-ville" type="search" placeholder="Ville (ex. Repentigny)" aria-label="Ville">
+    <button type="submit">Rechercher</button>
+  </form>
+  <div class="section-head"><h2>Petites annonces récentes</h2></div>
+  <p class="intro-pros">Annonces fictives présentées pour tester l’apparence du site.</p>
+  <div class="grille-evenements" id="grille-annonces">
+    <article class="carte annonce-exemple" data-categorie="Maison et meubles" data-ville="Repentigny"><div class="image-evenement">🪑</div><div class="contenu-carte"><span class="etiquette">Exemple fictif · Maison et meubles</span><h3>Table de cuisine</h3><p class="information">📍 Repentigny</p><p><strong>150 $</strong></p></div></article>
+    <article class="carte annonce-exemple" data-categorie="Loisirs et plein air" data-ville="Terrebonne"><div class="image-evenement">🚲</div><div class="contenu-carte"><span class="etiquette">Exemple fictif · Loisirs et plein air</span><h3>Vélo pour adulte</h3><p class="information">📍 Terrebonne</p><p><strong>120 $</strong></p></div></article>
+    <article class="carte annonce-exemple" data-categorie="Véhicules" data-ville="Mascouche"><div class="image-evenement">🚗</div><div class="contenu-carte"><span class="etiquette">Exemple fictif · Véhicules</span><h3>Voiture d’occasion</h3><p class="information">📍 Mascouche</p><p><strong>6 500 $</strong></p></div></article>
+    <article class="carte annonce-exemple" data-categorie="Services" data-ville="Joliette"><div class="image-evenement">🖌️</div><div class="contenu-carte"><span class="etiquette">Exemple fictif · Services</span><h3>Service de peinture</h3><p class="information">📍 Joliette</p><p><strong>Sur demande</strong></p></div></article>
+  </div>
+  <p id="resultat-annonces" class="message" hidden aria-live="polite"></p>
+</section>
+
+
+
 <section class="annuaire-pros" id="entrepreneurs" aria-labelledby="titre-pros">
 <div class="section-head"><h2 id="titre-pros">🛠️ Entrepreneurs et services</h2></div>
 <p class="intro-pros">Trouvez un professionnel près de chez vous. Consultez ses coordonnées et son site officiel.</p>
@@ -46,7 +72,9 @@ footer{border-top:1px solid var(--bord);background:white;padding:22px 0;color:va
 <p id="etat-pros" role="status" aria-live="polite" class="intro-pros">Chargement des professionnels…</p>
 <div id="liste-pros" class="grille-pros" aria-label="Professionnels"></div>
 </section>
-</main><footer><div class="container">© 2026 Komelio · Événements et commerces du Québec. Les images générées par IA sont illustratives.</div></footer>
+<section id="evenements"><div class="section-head"><h2>🔥 Événements à venir</h2><span class="compteur" id="compteur">Chargement…</span></div><form class="recherche" id="recherche"><input id="recherche-texte" placeholder="Rechercher un événement..." aria-label="Rechercher un événement"><input id="recherche-ville" placeholder="Ville (ex. Repentigny)" aria-label="Ville"><input id="recherche-date" type="date" aria-label="Date de l'événement"><button type="submit">Rechercher</button></form>
+<div class="grille-evenements" id="event-grid"></div><p id="message" class="message" hidden></p></section>
+</main><footer><div class="container">© 2026 Annonces Lanaudière · Événements et commerces du Québec. Les images générées par IA sont illustratives.</div></footer>
 <script>
 'use strict';
 const grille=document.getElementById('event-grid');
@@ -178,6 +206,27 @@ fetch('./evenements-a-venir.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw ne
  }
  formulaire.addEventListener('submit',e=>{e.preventDefault();chargerPros();});
  chargerPros();
+})();
+</script>
+<script>
+(function(){
+ const resultat=document.getElementById('resultat-annonces');
+ const boutons=document.querySelectorAll('.categorie-annonce');
+ const annonces=document.querySelectorAll('.annonce-exemple');
+ const formulaire=document.getElementById('recherche-annonces');
+ const mot=document.getElementById('annonce-mot'), ville=document.getElementById('annonce-ville');
+ let categorie='';
+ const normaliser=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();
+ function filtrer(){
+  let nombre=0; const q=normaliser(mot.value), v=normaliser(ville.value);
+  annonces.forEach(a=>{const contenu=normaliser(a.textContent), villeAnnonce=normaliser(a.dataset.ville||'');a.hidden=!!(categorie && a.dataset.categorie!==categorie)||!!(q&&!contenu.includes(q))||!!(v&&!villeAnnonce.includes(v));if(!a.hidden)nombre++;});
+  resultat.hidden=nombre>0;resultat.textContent='Aucune annonce fictive ne correspond à votre recherche.';
+ }
+ boutons.forEach(b=>b.addEventListener('click',()=>{
+  const choix=b.textContent.replace(/^\S+\s*/, '').trim();categorie=categorie===choix?'':choix;
+  boutons.forEach(x=>x.classList.toggle('active',x===b && !!categorie));filtrer();
+ }));
+ formulaire.addEventListener('submit',e=>{e.preventDefault();filtrer();});
 })();
 </script>
 </body>
