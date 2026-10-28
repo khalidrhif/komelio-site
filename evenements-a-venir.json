@@ -1,15 +1,5 @@
 [
   {
-    "titre": "Vivre au rythme des saisons",
-    "date": "27 octobre 2026",
-    "horaire": "19 h à 20 h 30",
-    "seances": [],
-    "lieu": "Bibliothèque Robert-Lussier",
-    "prix": "Gratuit",
-    "inscription": "Requise",
-    "url_source": "https://repentigny.ca/evenement/vivre-au-rythme-des-saisons"
-  },
-  {
     "titre": "Spectacle : Ça grouille dans le marais du sorcier",
     "date": "28 octobre 2026",
     "horaire": "18 h 45 à 19 h 30",
@@ -28,6 +18,26 @@
     "prix": "Gratuit",
     "inscription": "Requise",
     "url_source": "https://repentigny.ca/evenement/initiation-facebook-sur-un-cellulaire"
+  },
+  {
+    "titre": "Exposition SUITES du Collectif 5",
+    "date": "28 octobre 2026",
+    "horaire": "10 h à 17 h",
+    "seances": [],
+    "lieu": "Centre d'art Diane-Dufresne",
+    "prix": "8,00$",
+    "inscription": "À vérifier",
+    "url_source": "https://repentigny.ca/evenement/exposition-suites-du-collectif-5"
+  },
+  {
+    "titre": "Exposition #SELFIEPROJECT + FILL LE VIDE de Véronique Duplain",
+    "date": "28 octobre 2026",
+    "horaire": "10 h à 17 h",
+    "seances": [],
+    "lieu": "Centre d'art Diane-Dufresne",
+    "prix": "8,00$",
+    "inscription": "À vérifier",
+    "url_source": "https://repentigny.ca/evenement/exposition-selfieproject-fill-le-vide-de-veronique-duplain"
   },
   {
     "titre": "Musée de l'étrange : Visite des expositions à la lampe de poche",
@@ -87,6 +97,16 @@
     "url_source": "https://repentigny.ca/evenement/party-dhalloween-au-crealab"
   },
   {
+    "titre": "Musée de l'étrange : Finissage",
+    "date": "31 octobre 2026",
+    "horaire": "10 h à 12 h",
+    "seances": [],
+    "lieu": "Espace culturel de Repentigny",
+    "prix": "Gratuit",
+    "inscription": "À vérifier",
+    "url_source": "https://repentigny.ca/evenement/musee-de-letrange-finissage"
+  },
+  {
     "titre": "Halloween au Centre aquatique Jacques-Dupuis",
     "date": "31 octobre 2026",
     "horaire": "13 h à 15 h 55",
@@ -95,15 +115,5 @@
     "prix": "Gratuit",
     "inscription": "À vérifier",
     "url_source": "https://repentigny.ca/evenement/halloween-au-centre-aquatique-jacques-dupuis"
-  },
-  {
-    "titre": "Visite commentée",
-    "date": "31 octobre 2026",
-    "horaire": "14 h",
-    "seances": [],
-    "lieu": "Centre d'art Diane-Dufresne",
-    "prix": "8,00$",
-    "inscription": "Requise",
-    "url_source": "https://repentigny.ca/evenement/visite-commentee"
   }
 ]
