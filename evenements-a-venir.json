@@ -1,92 +1,5 @@
 [
   {
-    "titre": "Spectacle : Ça grouille dans le marais du sorcier",
-    "date": "28 octobre 2026",
-    "horaire": "18 h 45 à 19 h 30",
-    "seances": [],
-    "lieu": "Bibliothèque Robert-Lussier",
-    "prix": "Gratuit",
-    "inscription": "Requise",
-    "url_source": "https://repentigny.ca/evenement/spectacle-ca-grouille-dans-le-marais-du-sorcier"
-  },
-  {
-    "titre": "Initiation à Facebook sur un cellulaire",
-    "date": "28 octobre 2026",
-    "horaire": "14 h à 15 h 30",
-    "seances": [],
-    "lieu": "Bibliothèque Edmond-Archambault",
-    "prix": "Gratuit",
-    "inscription": "Requise",
-    "url_source": "https://repentigny.ca/evenement/initiation-facebook-sur-un-cellulaire"
-  },
-  {
-    "titre": "Exposition SUITES du Collectif 5",
-    "date": "28 octobre 2026",
-    "horaire": "10 h à 17 h",
-    "seances": [],
-    "lieu": "Centre d'art Diane-Dufresne",
-    "prix": "8,00$",
-    "inscription": "À vérifier",
-    "url_source": "https://repentigny.ca/evenement/exposition-suites-du-collectif-5"
-  },
-  {
-    "titre": "Exposition #SELFIEPROJECT + FILL LE VIDE de Véronique Duplain",
-    "date": "28 octobre 2026",
-    "horaire": "10 h à 17 h",
-    "seances": [],
-    "lieu": "Centre d'art Diane-Dufresne",
-    "prix": "8,00$",
-    "inscription": "À vérifier",
-    "url_source": "https://repentigny.ca/evenement/exposition-selfieproject-fill-le-vide-de-veronique-duplain"
-  },
-  {
-    "titre": "Musée de l'étrange : Visite des expositions à la lampe de poche",
-    "date": "28 octobre 2026",
-    "horaire": "Plusieurs séances",
-    "seances": [
-      {
-        "date": "28 octobre 2026",
-        "heure": "18 h"
-      },
-      {
-        "date": "28 octobre 2026",
-        "heure": "19 h"
-      },
-      {
-        "date": "28 octobre 2026",
-        "heure": "20 h"
-      },
-      {
-        "date": "29 octobre 2026",
-        "heure": "18 h"
-      },
-      {
-        "date": "29 octobre 2026",
-        "heure": "19 h"
-      },
-      {
-        "date": "29 octobre 2026",
-        "heure": "20 h"
-      },
-      {
-        "date": "30 octobre 2026",
-        "heure": "18 h"
-      },
-      {
-        "date": "30 octobre 2026",
-        "heure": "19 h"
-      },
-      {
-        "date": "30 octobre 2026",
-        "heure": "20 h"
-      }
-    ],
-    "lieu": "Espace culturel de Repentigny",
-    "prix": "Gratuit",
-    "inscription": "Requise",
-    "url_source": "https://repentigny.ca/evenement/musee-de-letrange-visite-des-expositions-la-lampe-de-poche"
-  },
-  {
     "titre": "Party d'Halloween au Créalab",
     "date": "29 octobre 2026",
     "horaire": "19 h à 21 h",
@@ -115,5 +28,25 @@
     "prix": "Gratuit",
     "inscription": "À vérifier",
     "url_source": "https://repentigny.ca/evenement/halloween-au-centre-aquatique-jacques-dupuis"
+  },
+  {
+    "titre": "Visite commentée",
+    "date": "31 octobre 2026",
+    "horaire": "14 h",
+    "seances": [],
+    "lieu": "Centre d'art Diane-Dufresne",
+    "prix": "8,00$",
+    "inscription": "Requise",
+    "url_source": "https://repentigny.ca/evenement/visite-commentee"
+  },
+  {
+    "titre": "Atelier de conception d'une chouette en bois",
+    "date": "01 novembre 2026",
+    "horaire": "13 h 30 à 14 h 30",
+    "seances": [],
+    "lieu": "Bibliothèque Robert-Lussier",
+    "prix": "Gratuit",
+    "inscription": "Requise",
+    "url_source": "https://repentigny.ca/evenement/atelier-de-conception-dune-chouette-en-bois"
   }
 ]
