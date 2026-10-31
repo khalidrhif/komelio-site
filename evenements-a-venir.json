@@ -1,15 +1,5 @@
 [
   {
-    "titre": "Bébé-Biblio et papotage",
-    "date": "30 octobre 2026",
-    "horaire": "10 h à 11 h 30",
-    "seances": [],
-    "lieu": "Bibliothèque Robert-Lussier",
-    "prix": "Gratuit",
-    "inscription": "À vérifier",
-    "url_source": "https://repentigny.ca/evenement/bebe-biblio-et-papotage"
-  },
-  {
     "titre": "Musée de l'étrange : Finissage",
     "date": "31 octobre 2026",
     "horaire": "10 h à 12 h",
@@ -48,5 +38,25 @@
     "prix": "Gratuit",
     "inscription": "Requise",
     "url_source": "https://repentigny.ca/evenement/atelier-de-conception-dune-chouette-en-bois"
+  },
+  {
+    "titre": "Conférence de l'artiste Véronique Duplain",
+    "date": "05 novembre 2026",
+    "horaire": "14 h",
+    "seances": [],
+    "lieu": "Centre d'art Diane-Dufresne",
+    "prix": "8,00$",
+    "inscription": "Requise",
+    "url_source": "https://repentigny.ca/evenement/conference-de-lartiste-veronique-duplain"
+  },
+  {
+    "titre": "Atelier de dessin – anatomie",
+    "date": "07 novembre 2026",
+    "horaire": "13 h",
+    "seances": [],
+    "lieu": "Bibliothèque Robert-Lussier",
+    "prix": "Gratuit",
+    "inscription": "Requise",
+    "url_source": "https://repentigny.ca/evenement/atelier-de-dessin-anatomie"
   }
 ]
