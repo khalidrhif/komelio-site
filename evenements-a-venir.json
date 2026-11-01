@@ -1,35 +1,5 @@
 [
   {
-    "titre": "Musée de l'étrange : Finissage",
-    "date": "31 octobre 2026",
-    "horaire": "10 h à 12 h",
-    "seances": [],
-    "lieu": "Espace culturel de Repentigny",
-    "prix": "Gratuit",
-    "inscription": "À vérifier",
-    "url_source": "https://repentigny.ca/evenement/musee-de-letrange-finissage"
-  },
-  {
-    "titre": "Halloween au Centre aquatique Jacques-Dupuis",
-    "date": "31 octobre 2026",
-    "horaire": "13 h à 15 h 55",
-    "seances": [],
-    "lieu": "Centre aquatique Jacques-Dupuis",
-    "prix": "Gratuit",
-    "inscription": "À vérifier",
-    "url_source": "https://repentigny.ca/evenement/halloween-au-centre-aquatique-jacques-dupuis"
-  },
-  {
-    "titre": "Visite commentée",
-    "date": "31 octobre 2026",
-    "horaire": "14 h",
-    "seances": [],
-    "lieu": "Centre d'art Diane-Dufresne",
-    "prix": "8,00$",
-    "inscription": "Requise",
-    "url_source": "https://repentigny.ca/evenement/visite-commentee"
-  },
-  {
     "titre": "Atelier de conception d'une chouette en bois",
     "date": "01 novembre 2026",
     "horaire": "13 h 30 à 14 h 30",
@@ -58,5 +28,35 @@
     "prix": "Gratuit",
     "inscription": "Requise",
     "url_source": "https://repentigny.ca/evenement/atelier-de-dessin-anatomie"
+  },
+  {
+    "titre": "Échange de casse-têtes et de jeux de société usagés pour enfant",
+    "date": "07 novembre 2026",
+    "horaire": "14 h 30 à 15 h",
+    "seances": [],
+    "lieu": "Bibliothèque Robert-Lussier",
+    "prix": "Gratuit",
+    "inscription": "Non requise",
+    "url_source": "https://repentigny.ca/evenement/echange-de-casse-tetes-et-de-jeux-de-societe-usages-pour-enfant"
+  },
+  {
+    "titre": "Forum sur le vivre-ensemble 2026 : Faire communauté!",
+    "date": "07 novembre 2026",
+    "horaire": "9 h 30 à 15 h 30",
+    "seances": [],
+    "lieu": "Hôtel de ville de Repentigny",
+    "prix": "Gratuit",
+    "inscription": "Requise",
+    "url_source": "https://repentigny.ca/evenement/forum-sur-le-vivre-ensemble-2026-faire-communaute"
+  },
+  {
+    "titre": "Échange de casse-têtes et de jeux de société usagés pour adulte",
+    "date": "07 novembre 2026",
+    "horaire": "13 h 30 à 14 h",
+    "seances": [],
+    "lieu": "Bibliothèque Robert-Lussier",
+    "prix": "Gratuit",
+    "inscription": "Non requise",
+    "url_source": "https://repentigny.ca/evenement/echange-de-casse-tetes-et-de-jeux-de-societe-usages-pour-adulte"
   }
 ]
