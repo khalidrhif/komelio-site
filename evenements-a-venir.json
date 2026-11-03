@@ -50,6 +50,16 @@
     "url_source": "https://repentigny.ca/evenement/echange-de-casse-tetes-et-de-jeux-de-societe-usages-pour-adulte"
   },
   {
+    "titre": "Visite commentée",
+    "date": "07 novembre 2026",
+    "horaire": "14 h",
+    "seances": [],
+    "lieu": "Centre d'art Diane-Dufresne",
+    "prix": "8,00$",
+    "inscription": "Requise",
+    "url_source": "https://repentigny.ca/evenement/visite-commentee"
+  },
+  {
     "titre": "Conférence : Corbillards, croque-morts et funérailles, vols de dépouilles et quoi encore?",
     "date": "08 novembre 2026",
     "horaire": "14 h à 15 h 30",
@@ -58,5 +68,15 @@
     "prix": "10,00$",
     "inscription": "Requise",
     "url_source": "https://repentigny.ca/evenement/conference-corbillards-croque-morts-et-funerailles-vols-de-depouilles-et-quoi-encore"
+  },
+  {
+    "titre": "Les univers fantastiques de l'origami de Noël",
+    "date": "08 novembre 2026",
+    "horaire": "14 h 30 à 15 h",
+    "seances": [],
+    "lieu": "Bibliothèque Robert-Lussier",
+    "prix": "Gratuit",
+    "inscription": "Requise",
+    "url_source": "https://repentigny.ca/evenement/les-univers-fantastiques-de-lorigami-de-noel"
   }
 ]
