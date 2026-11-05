@@ -78,5 +78,15 @@
     "prix": "Gratuit",
     "inscription": "Requise",
     "url_source": "https://repentigny.ca/evenement/les-univers-fantastiques-de-lorigami-de-noel"
+  },
+  {
+    "titre": "Dimanches créatifs",
+    "date": "08 novembre 2026",
+    "horaire": "11 h",
+    "seances": [],
+    "lieu": "Centre d'art Diane-Dufresne",
+    "prix": "6,50$",
+    "inscription": "Requise",
+    "url_source": "https://repentigny.ca/evenement/dimanches-creatifs"
   }
 ]
