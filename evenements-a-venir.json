@@ -1,15 +1,5 @@
 [
   {
-    "titre": "Conférence de l'artiste Véronique Duplain",
-    "date": "05 novembre 2026",
-    "horaire": "14 h",
-    "seances": [],
-    "lieu": "Centre d'art Diane-Dufresne",
-    "prix": "8,00$",
-    "inscription": "Requise",
-    "url_source": "https://repentigny.ca/evenement/conference-de-lartiste-veronique-duplain"
-  },
-  {
     "titre": "Atelier de dessin – anatomie",
     "date": "07 novembre 2026",
     "horaire": "13 h",
@@ -88,5 +78,15 @@
     "prix": "6,50$",
     "inscription": "Requise",
     "url_source": "https://repentigny.ca/evenement/dimanches-creatifs"
+  },
+  {
+    "titre": "L'atelier 11-15",
+    "date": "08 novembre 2026",
+    "horaire": "13 h 30 à 15 h",
+    "seances": [],
+    "lieu": "Centre d'art Diane-Dufresne",
+    "prix": "6,50$",
+    "inscription": "Requise",
+    "url_source": "https://repentigny.ca/evenement/latelier-11-15"
   }
 ]
