@@ -1,55 +1,5 @@
 [
   {
-    "titre": "Atelier de dessin – anatomie",
-    "date": "07 novembre 2026",
-    "horaire": "13 h",
-    "seances": [],
-    "lieu": "Bibliothèque Robert-Lussier",
-    "prix": "Gratuit",
-    "inscription": "Requise",
-    "url_source": "https://repentigny.ca/evenement/atelier-de-dessin-anatomie"
-  },
-  {
-    "titre": "Échange de casse-têtes et de jeux de société usagés pour enfant",
-    "date": "07 novembre 2026",
-    "horaire": "14 h 30 à 15 h",
-    "seances": [],
-    "lieu": "Bibliothèque Robert-Lussier",
-    "prix": "Gratuit",
-    "inscription": "Non requise",
-    "url_source": "https://repentigny.ca/evenement/echange-de-casse-tetes-et-de-jeux-de-societe-usages-pour-enfant"
-  },
-  {
-    "titre": "Forum sur le vivre-ensemble 2026 : Faire communauté!",
-    "date": "07 novembre 2026",
-    "horaire": "9 h 30 à 15 h 30",
-    "seances": [],
-    "lieu": "Hôtel de ville de Repentigny",
-    "prix": "Gratuit",
-    "inscription": "Requise",
-    "url_source": "https://repentigny.ca/evenement/forum-sur-le-vivre-ensemble-2026-faire-communaute"
-  },
-  {
-    "titre": "Échange de casse-têtes et de jeux de société usagés pour adulte",
-    "date": "07 novembre 2026",
-    "horaire": "13 h 30 à 14 h",
-    "seances": [],
-    "lieu": "Bibliothèque Robert-Lussier",
-    "prix": "Gratuit",
-    "inscription": "Non requise",
-    "url_source": "https://repentigny.ca/evenement/echange-de-casse-tetes-et-de-jeux-de-societe-usages-pour-adulte"
-  },
-  {
-    "titre": "Visite commentée",
-    "date": "07 novembre 2026",
-    "horaire": "14 h",
-    "seances": [],
-    "lieu": "Centre d'art Diane-Dufresne",
-    "prix": "8,00$",
-    "inscription": "Requise",
-    "url_source": "https://repentigny.ca/evenement/visite-commentee"
-  },
-  {
     "titre": "Conférence : Corbillards, croque-morts et funérailles, vols de dépouilles et quoi encore?",
     "date": "08 novembre 2026",
     "horaire": "14 h à 15 h 30",
@@ -88,5 +38,45 @@
     "prix": "6,50$",
     "inscription": "Requise",
     "url_source": "https://repentigny.ca/evenement/latelier-11-15"
+  },
+  {
+    "titre": "iPad intermédiaire",
+    "date": "11 novembre 2026",
+    "horaire": "14 h à 15 h 30",
+    "seances": [],
+    "lieu": "Bibliothèque Edmond-Archambault",
+    "prix": "Gratuit",
+    "inscription": "Requise",
+    "url_source": "https://repentigny.ca/evenement/ipad-intermediaire"
+  },
+  {
+    "titre": "Visite commentée avec l'artiste Marilyne Bissonnette",
+    "date": "12 novembre 2026",
+    "horaire": "14 h",
+    "seances": [],
+    "lieu": "Centre d'art Diane-Dufresne",
+    "prix": "8,00$",
+    "inscription": "Requise",
+    "url_source": "https://repentigny.ca/evenement/visite-commentee-avec-lartiste-marilyne-bissonnette"
+  },
+  {
+    "titre": "Être ou naître artiste",
+    "date": "12 novembre 2026",
+    "horaire": "19 h à 20 h 30",
+    "seances": [],
+    "lieu": "Bibliothèque Robert-Lussier",
+    "prix": "Gratuit",
+    "inscription": "Requise",
+    "url_source": "https://repentigny.ca/evenement/etre-ou-naitre-artiste"
+  },
+  {
+    "titre": "Apéros créatifs",
+    "date": "12 novembre 2026",
+    "horaire": "19 h",
+    "seances": [],
+    "lieu": "Centre d'art Diane-Dufresne",
+    "prix": "30,00$",
+    "inscription": "Requise",
+    "url_source": "https://repentigny.ca/evenement/aperos-creatifs"
   }
 ]
