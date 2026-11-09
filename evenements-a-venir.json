@@ -1,45 +1,5 @@
 [
   {
-    "titre": "Conférence : Corbillards, croque-morts et funérailles, vols de dépouilles et quoi encore?",
-    "date": "08 novembre 2026",
-    "horaire": "14 h à 15 h 30",
-    "seances": [],
-    "lieu": "Hôtel de ville de Repentigny",
-    "prix": "10,00$",
-    "inscription": "Requise",
-    "url_source": "https://repentigny.ca/evenement/conference-corbillards-croque-morts-et-funerailles-vols-de-depouilles-et-quoi-encore"
-  },
-  {
-    "titre": "Les univers fantastiques de l'origami de Noël",
-    "date": "08 novembre 2026",
-    "horaire": "14 h 30 à 15 h",
-    "seances": [],
-    "lieu": "Bibliothèque Robert-Lussier",
-    "prix": "Gratuit",
-    "inscription": "Requise",
-    "url_source": "https://repentigny.ca/evenement/les-univers-fantastiques-de-lorigami-de-noel"
-  },
-  {
-    "titre": "Dimanches créatifs",
-    "date": "08 novembre 2026",
-    "horaire": "11 h",
-    "seances": [],
-    "lieu": "Centre d'art Diane-Dufresne",
-    "prix": "6,50$",
-    "inscription": "Requise",
-    "url_source": "https://repentigny.ca/evenement/dimanches-creatifs"
-  },
-  {
-    "titre": "L'atelier 11-15",
-    "date": "08 novembre 2026",
-    "horaire": "13 h 30 à 15 h",
-    "seances": [],
-    "lieu": "Centre d'art Diane-Dufresne",
-    "prix": "6,50$",
-    "inscription": "Requise",
-    "url_source": "https://repentigny.ca/evenement/latelier-11-15"
-  },
-  {
     "titre": "iPad intermédiaire",
     "date": "11 novembre 2026",
     "horaire": "14 h à 15 h 30",
@@ -78,5 +38,35 @@
     "prix": "30,00$",
     "inscription": "Requise",
     "url_source": "https://repentigny.ca/evenement/aperos-creatifs"
+  },
+  {
+    "titre": "Jeu d'évasion : Est-ce que Zarhouni veut saboter les 10 ans du Créalab?",
+    "date": "13 novembre 2026",
+    "horaire": "9 h à 16 h",
+    "seances": [],
+    "lieu": "Bibliothèque Robert-Lussier",
+    "prix": "Gratuit",
+    "inscription": "À vérifier",
+    "url_source": "https://repentigny.ca/evenement/jeu-devasion-est-ce-que-zarhouni-veut-saboter-les-10-ans-du-crealab"
+  },
+  {
+    "titre": "Commis d'un jour",
+    "date": "13 novembre 2026",
+    "horaire": "9 h à 16 h 30",
+    "seances": [],
+    "lieu": "Bibliothèque Robert-Lussier",
+    "prix": "Gratuit",
+    "inscription": "À vérifier",
+    "url_source": "https://repentigny.ca/evenement/commis-dun-jour"
+  },
+  {
+    "titre": "LEGO ®",
+    "date": "14 novembre 2026",
+    "horaire": "13 h 30 à 14 h 30",
+    "seances": [],
+    "lieu": "Bibliothèque Robert-Lussier",
+    "prix": "Gratuit",
+    "inscription": "Requise",
+    "url_source": "https://repentigny.ca/evenement/lego-r"
   }
 ]
