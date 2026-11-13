@@ -1,35 +1,5 @@
 [
   {
-    "titre": "Visite commentée avec l'artiste Marilyne Bissonnette",
-    "date": "12 novembre 2026",
-    "horaire": "14 h",
-    "seances": [],
-    "lieu": "Centre d'art Diane-Dufresne",
-    "prix": "8,00$",
-    "inscription": "Requise",
-    "url_source": "https://repentigny.ca/evenement/visite-commentee-avec-lartiste-marilyne-bissonnette"
-  },
-  {
-    "titre": "Être ou naître artiste",
-    "date": "12 novembre 2026",
-    "horaire": "19 h à 20 h 30",
-    "seances": [],
-    "lieu": "Bibliothèque Robert-Lussier",
-    "prix": "Gratuit",
-    "inscription": "Requise",
-    "url_source": "https://repentigny.ca/evenement/etre-ou-naitre-artiste"
-  },
-  {
-    "titre": "Apéros créatifs",
-    "date": "12 novembre 2026",
-    "horaire": "19 h",
-    "seances": [],
-    "lieu": "Centre d'art Diane-Dufresne",
-    "prix": "30,00$",
-    "inscription": "Requise",
-    "url_source": "https://repentigny.ca/evenement/aperos-creatifs"
-  },
-  {
     "titre": "Jeu d'évasion : Est-ce que Zarhouni veut saboter les 10 ans du Créalab?",
     "date": "13 novembre 2026",
     "horaire": "9 h à 16 h",
@@ -58,5 +28,25 @@
     "prix": "Gratuit",
     "inscription": "Requise",
     "url_source": "https://repentigny.ca/evenement/lego-r"
+  },
+  {
+    "titre": "Guignolée 2026",
+    "date": "15 novembre 2026",
+    "horaire": "9 h 30 à 15 h",
+    "seances": [],
+    "lieu": "Lieu à vérifier",
+    "prix": "Gratuit",
+    "inscription": "À vérifier",
+    "url_source": "https://repentigny.ca/evenement/guignolee-2026"
+  },
+  {
+    "titre": "Ateliers d'éveil artistique",
+    "date": "15 novembre 2026",
+    "horaire": "9 h à 9 h 35",
+    "seances": [],
+    "lieu": "Centre d'art Diane-Dufresne",
+    "prix": "6,50$",
+    "inscription": "Requise",
+    "url_source": "https://repentigny.ca/evenement/ateliers-deveil-artistique"
   }
 ]
