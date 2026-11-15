@@ -1,15 +1,5 @@
 [
   {
-    "titre": "LEGO ®",
-    "date": "14 novembre 2026",
-    "horaire": "13 h 30 à 14 h 30",
-    "seances": [],
-    "lieu": "Bibliothèque Robert-Lussier",
-    "prix": "Gratuit",
-    "inscription": "Requise",
-    "url_source": "https://repentigny.ca/evenement/lego-r"
-  },
-  {
     "titre": "Guignolée 2026",
     "date": "15 novembre 2026",
     "horaire": "9 h 30 à 15 h",
@@ -28,5 +18,25 @@
     "prix": "6,50$",
     "inscription": "Requise",
     "url_source": "https://repentigny.ca/evenement/ateliers-deveil-artistique"
+  },
+  {
+    "titre": "On a tous quelque chose à écrire : atelier d’écriture",
+    "date": "17 novembre 2026",
+    "horaire": "19 h à 20 h 30",
+    "seances": [],
+    "lieu": "Bibliothèque Robert-Lussier",
+    "prix": "Gratuit",
+    "inscription": "Requise",
+    "url_source": "https://repentigny.ca/evenement/tous-quelque-chose-ecrire-atelier-decriture"
+  },
+  {
+    "titre": "Rencontre avec le Collectif CiÖ",
+    "date": "19 novembre 2026",
+    "horaire": "14 h",
+    "seances": [],
+    "lieu": "Centre d'art Diane-Dufresne",
+    "prix": "8,00$",
+    "inscription": "Requise",
+    "url_source": "https://repentigny.ca/evenement/rencontre-avec-le-collectif-cio"
   }
 ]
