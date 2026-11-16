@@ -1,25 +1,5 @@
 [
   {
-    "titre": "Guignolée 2026",
-    "date": "15 novembre 2026",
-    "horaire": "9 h 30 à 15 h",
-    "seances": [],
-    "lieu": "Lieu à vérifier",
-    "prix": "Gratuit",
-    "inscription": "À vérifier",
-    "url_source": "https://repentigny.ca/evenement/guignolee-2026"
-  },
-  {
-    "titre": "Ateliers d'éveil artistique",
-    "date": "15 novembre 2026",
-    "horaire": "9 h à 9 h 35",
-    "seances": [],
-    "lieu": "Centre d'art Diane-Dufresne",
-    "prix": "6,50$",
-    "inscription": "Requise",
-    "url_source": "https://repentigny.ca/evenement/ateliers-deveil-artistique"
-  },
-  {
     "titre": "On a tous quelque chose à écrire : atelier d’écriture",
     "date": "17 novembre 2026",
     "horaire": "19 h à 20 h 30",
@@ -38,5 +18,45 @@
     "prix": "8,00$",
     "inscription": "Requise",
     "url_source": "https://repentigny.ca/evenement/rencontre-avec-le-collectif-cio"
+  },
+  {
+    "titre": "Conférence en environnement : Le coach du bac",
+    "date": "19 novembre 2026",
+    "horaire": "19 h",
+    "seances": [],
+    "lieu": "Hôtel de ville de Repentigny",
+    "prix": "Gratuit",
+    "inscription": "Requise",
+    "url_source": "https://repentigny.ca/evenement/conference-en-environnement-le-coach-du-bac"
+  },
+  {
+    "titre": "Vins et fromages",
+    "date": "19 novembre 2026",
+    "horaire": "19 h à 20 h 30",
+    "seances": [],
+    "lieu": "Bibliothèque Robert-Lussier",
+    "prix": "Gratuit",
+    "inscription": "Requise",
+    "url_source": "https://repentigny.ca/evenement/vins-et-fromages"
+  },
+  {
+    "titre": "Salon des artisans des organismes communautaires du secteur personnes handicapées",
+    "date": "20 novembre 2026",
+    "horaire": "10 h à 20 h",
+    "seances": [],
+    "lieu": "Centre à Nous",
+    "prix": "Gratuit",
+    "inscription": "À vérifier",
+    "url_source": "https://repentigny.ca/evenement/salon-des-artisans-des-organismes-communautaires-du-secteur-personnes-handicapees"
+  },
+  {
+    "titre": "Apéros festifs",
+    "date": "20 novembre 2026",
+    "horaire": "19 h",
+    "seances": [],
+    "lieu": "Centre d'art Diane-Dufresne",
+    "prix": "30,00$",
+    "inscription": "Requise",
+    "url_source": "https://repentigny.ca/evenement/aperos-festifs"
   }
 ]
