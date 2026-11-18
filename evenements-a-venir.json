@@ -1,15 +1,5 @@
 [
   {
-    "titre": "On a tous quelque chose à écrire : atelier d’écriture",
-    "date": "17 novembre 2026",
-    "horaire": "19 h à 20 h 30",
-    "seances": [],
-    "lieu": "Bibliothèque Robert-Lussier",
-    "prix": "Gratuit",
-    "inscription": "Requise",
-    "url_source": "https://repentigny.ca/evenement/tous-quelque-chose-ecrire-atelier-decriture"
-  },
-  {
     "titre": "Rencontre avec le Collectif CiÖ",
     "date": "19 novembre 2026",
     "horaire": "14 h",
@@ -58,5 +48,25 @@
     "prix": "30,00$",
     "inscription": "Requise",
     "url_source": "https://repentigny.ca/evenement/aperos-festifs"
+  },
+  {
+    "titre": "Votre air des fêtes!",
+    "date": "20 novembre 2026",
+    "horaire": "Toute la journée",
+    "seances": [],
+    "lieu": "Lieu à vérifier",
+    "prix": "Gratuit",
+    "inscription": "Requise",
+    "url_source": "https://repentigny.ca/evenement/votre-air-des-fetes"
+  },
+  {
+    "titre": "Atelier arts et bricolage",
+    "date": "21 novembre 2026",
+    "horaire": "13 h",
+    "seances": [],
+    "lieu": "Bibliothèque Robert-Lussier",
+    "prix": "Gratuit",
+    "inscription": "Requise",
+    "url_source": "https://repentigny.ca/evenement/atelier-arts-et-bricolage"
   }
 ]
