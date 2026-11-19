@@ -68,5 +68,15 @@
     "prix": "Gratuit",
     "inscription": "Requise",
     "url_source": "https://repentigny.ca/evenement/atelier-arts-et-bricolage"
+  },
+  {
+    "titre": "Les grandes rencontres littéraires avec Pascale Montpetit",
+    "date": "22 novembre 2026",
+    "horaire": "14 h à 15 h 15",
+    "seances": [],
+    "lieu": "Hôtel de ville de Repentigny",
+    "prix": "Gratuit",
+    "inscription": "Requise",
+    "url_source": "https://repentigny.ca/evenement/les-grandes-rencontres-litteraires-avec-pascale-montpetit"
   }
 ]
