@@ -1,15 +1,5 @@
 [
   {
-    "titre": "Atelier arts et bricolage",
-    "date": "21 novembre 2026",
-    "horaire": "13 h",
-    "seances": [],
-    "lieu": "Bibliothèque Robert-Lussier",
-    "prix": "Gratuit",
-    "inscription": "Requise",
-    "url_source": "https://repentigny.ca/evenement/atelier-arts-et-bricolage"
-  },
-  {
     "titre": "Les grandes rencontres littéraires avec Pascale Montpetit",
     "date": "22 novembre 2026",
     "horaire": "14 h à 15 h 15",
@@ -18,5 +8,25 @@
     "prix": "Gratuit",
     "inscription": "Requise",
     "url_source": "https://repentigny.ca/evenement/les-grandes-rencontres-litteraires-avec-pascale-montpetit"
+  },
+  {
+    "titre": "Conférence : Faire son épicerie à bas prix",
+    "date": "24 novembre 2026",
+    "horaire": "19 h à 20 h 30",
+    "seances": [],
+    "lieu": "Bibliothèque Robert-Lussier",
+    "prix": "Gratuit",
+    "inscription": "Requise",
+    "url_source": "https://repentigny.ca/evenement/conference-faire-son-epicerie-bas-prix"
+  },
+  {
+    "titre": "Utilisation efficace de l'intelligence artificielle (IA)",
+    "date": "25 novembre 2026",
+    "horaire": "14 h à 15 h 30",
+    "seances": [],
+    "lieu": "Bibliothèque Robert-Lussier",
+    "prix": "Gratuit",
+    "inscription": "Requise",
+    "url_source": "https://repentigny.ca/evenement/utilisation-efficace-de-lintelligence-artificielle-ia"
   }
 ]
