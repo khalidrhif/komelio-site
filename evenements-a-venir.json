@@ -1,15 +1,5 @@
 [
   {
-    "titre": "Les grandes rencontres littéraires avec Pascale Montpetit",
-    "date": "22 novembre 2026",
-    "horaire": "14 h à 15 h 15",
-    "seances": [],
-    "lieu": "Hôtel de ville de Repentigny",
-    "prix": "Gratuit",
-    "inscription": "Requise",
-    "url_source": "https://repentigny.ca/evenement/les-grandes-rencontres-litteraires-avec-pascale-montpetit"
-  },
-  {
     "titre": "Conférence : Faire son épicerie à bas prix",
     "date": "24 novembre 2026",
     "horaire": "19 h à 20 h 30",
@@ -28,5 +18,15 @@
     "prix": "Gratuit",
     "inscription": "Requise",
     "url_source": "https://repentigny.ca/evenement/utilisation-efficace-de-lintelligence-artificielle-ia"
+  },
+  {
+    "titre": "Levée de fond pour la Société Alzheimer Lanaudière | Bingo : Jouons pour la mémoire",
+    "date": "27 novembre 2026",
+    "horaire": "18 h 30",
+    "seances": [],
+    "lieu": "Centre communautaire Laurent-Venne",
+    "prix": "20,00$",
+    "inscription": "À vérifier",
+    "url_source": "https://repentigny.ca/evenement/levee-de-fond-pour-la-societe-alzheimer-lanaudiere-bingo-jouons-pour-la-memoire"
   }
 ]
