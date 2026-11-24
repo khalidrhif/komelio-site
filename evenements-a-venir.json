@@ -28,5 +28,15 @@
     "prix": "20,00$",
     "inscription": "À vérifier",
     "url_source": "https://repentigny.ca/evenement/levee-de-fond-pour-la-societe-alzheimer-lanaudiere-bingo-jouons-pour-la-memoire"
+  },
+  {
+    "titre": "Rencontre littéraire avec Marie-Renée Lavoie",
+    "date": "29 novembre 2026",
+    "horaire": "14 h à 15 h 15",
+    "seances": [],
+    "lieu": "Bibliothèque Robert-Lussier",
+    "prix": "Gratuit",
+    "inscription": "Requise",
+    "url_source": "https://repentigny.ca/evenement/rencontre-litteraire-avec-marie-renee-lavoie"
   }
 ]
