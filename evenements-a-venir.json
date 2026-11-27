@@ -18,5 +18,15 @@
     "prix": "Gratuit",
     "inscription": "Requise",
     "url_source": "https://repentigny.ca/evenement/rencontre-litteraire-avec-marie-renee-lavoie"
+  },
+  {
+    "titre": "Spectacle : Le chat du père Noël",
+    "date": "02 décembre 2026",
+    "horaire": "18 h 45 à 19 h 30",
+    "seances": [],
+    "lieu": "Bibliothèque Robert-Lussier",
+    "prix": "Gratuit",
+    "inscription": "À vérifier",
+    "url_source": "https://repentigny.ca/evenement/spectacle-le-chat-du-pere-noel"
   }
 ]
