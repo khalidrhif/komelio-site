@@ -1,15 +1,5 @@
 [
   {
-    "titre": "Levée de fond pour la Société Alzheimer Lanaudière | Bingo : Jouons pour la mémoire",
-    "date": "27 novembre 2026",
-    "horaire": "18 h 30",
-    "seances": [],
-    "lieu": "Centre communautaire Laurent-Venne",
-    "prix": "20,00$",
-    "inscription": "À vérifier",
-    "url_source": "https://repentigny.ca/evenement/levee-de-fond-pour-la-societe-alzheimer-lanaudiere-bingo-jouons-pour-la-memoire"
-  },
-  {
     "titre": "Rencontre littéraire avec Marie-Renée Lavoie",
     "date": "29 novembre 2026",
     "horaire": "14 h à 15 h 15",
@@ -28,5 +18,25 @@
     "prix": "Gratuit",
     "inscription": "À vérifier",
     "url_source": "https://repentigny.ca/evenement/spectacle-le-chat-du-pere-noel"
+  },
+  {
+    "titre": "Conférence : Les nobles canadiens après la Conquête, se réinventer pour continuer à exister (1774-1815)",
+    "date": "03 décembre 2026",
+    "horaire": "19 h 30 à 21 h",
+    "seances": [],
+    "lieu": "Hôtel de ville de Repentigny",
+    "prix": "10,00$",
+    "inscription": "Requise",
+    "url_source": "https://repentigny.ca/evenement/conference-les-nobles-canadiens-apres-la-conquete-se-reinventer-pour-continuer-exister"
+  },
+  {
+    "titre": "Rencontre avec Laurence Florisca Rivard",
+    "date": "03 décembre 2026",
+    "horaire": "18 h",
+    "seances": [],
+    "lieu": "Bibliothèque Robert-Lussier",
+    "prix": "Gratuit",
+    "inscription": "Requise",
+    "url_source": "https://repentigny.ca/evenement/rencontre-avec-laurence-florisca-rivard"
   }
 ]
